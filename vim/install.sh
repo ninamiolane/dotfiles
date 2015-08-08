@@ -3,6 +3,7 @@
 backup_dir=backup_$(date +"%Y-%m-%d_%Hh%Mm%Ss")
 echo $backup_dir
 
+git submodule update
 for f in .vim{rc,}; do
     echo $f;
     if [[ -e ~/$f ]]; then
