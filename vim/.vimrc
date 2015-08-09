@@ -7,8 +7,8 @@ nnoremap <leader>v <Plug>TaskList
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set background=dark
 set expandtab
-set gcr=a:blinkon0 
-set history=1000   
+set gcr=a:blinkon0
+set history=1000
 set noerrorbells
 set nu
 set ruler
@@ -36,3 +36,4 @@ endif
 let g:flake8_show_in_gutter=1
 map <C-P> :call yapf#YAPF()<cr>
 imap <C-P> <c-o>:call yapf#YAPF()<cr>
+autocmd BufWritePre * :%s/\s\+$//e
