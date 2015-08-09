@@ -34,3 +34,5 @@ if has('statusline')
   set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
 endif
 let g:flake8_show_in_gutter=1
+map <C-P> :call yapf#YAPF()<cr>
+imap <C-P> <c-o>:call yapf#YAPF()<cr>
