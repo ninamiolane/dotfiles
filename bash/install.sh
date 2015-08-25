@@ -3,7 +3,7 @@
 backup_dir=backup_$(date +"%Y-%m-%d_%Hh%Mm%Ss")
 echo $backup_dir
 
-FILES='.bashrc .bash_profile .inputrc'
+FILES='.bashrc .bash_profile'
 
 for f in $FILES; do
     echo $f;
