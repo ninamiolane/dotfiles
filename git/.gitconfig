@@ -1,8 +1,23 @@
 [user]
+        johmathe = Johan Mathe
         email = johan.mathe@gmail.com
         name = Johan Mathe
 [push]
         default = simple
+[alias]
+        ci = commit
+        cim = commit -m
+        cimna = commit -m \"na\"
+        co = checkout
+        datetag = !git tag `date \"+%Y%m%d%H%M\"`
+        st = "status -s"
+        br = branch
+        bra = "branch -a"
+        fo = "fetch origin"
+        fu = "fetch upstream"
+        lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)[%an]%Creset' --abbrev-commit --date=relative"
+        lgol = "!git --no-pager log --pretty=oneline"
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
