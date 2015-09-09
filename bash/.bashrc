@@ -15,13 +15,13 @@ fi
 
 platform=$(uname)
 
+# Some colors on linux
 if [[ $platform == 'Linux' ]]; then
     alias ls='ls --color=auto'
     alias grep='grep --color=auto'
     alias ll='ls -l --color=auto'
-elif [[ $platform == 'Darwin' ]]
-
 fi
+
 export CLICOLOR=1
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/caffe/lib/
 export EDITOR=/usr/bin/vim
