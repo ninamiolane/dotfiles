@@ -9,6 +9,7 @@ function parse_git_branch {
 if [[ -f ${HOME}/.bash_completion && -d ${HOME}/.bash_completion.d ]]; then
     . ${HOME}/.bash_completion
 fi
+export CLICOLOR=1
 export EDITOR=/usr/bin/vim
 export VISUAL=${EDITOR}
 export PATH=$PATH:/usr/local/cuda/bin
