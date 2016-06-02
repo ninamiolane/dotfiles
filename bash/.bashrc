@@ -30,3 +30,5 @@ export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w $(parse_git_branch)\$\[\033[0
 export PYTHONPATH=$PYTHONPATH:/Users/johmathe/code/caffe/python:/home/johmathe/code/keras/:/Users/johmathe/code/keras/:/usr/local/caffe/python
 export VISUAL=${EDITOR}
 export NACL_SDK_ROOT="/Users/johmathe/code/chrome_app/nacl_sdk/pepper_44"
+
+export PATH=$PATH:/home/johmathe/.local/bin
