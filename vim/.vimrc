@@ -1,3 +1,9 @@
+" copy to buffer
+vmap <C-c> :w! ~/.vimbuffer<CR>
+nmap <C-c> :.w! ~/.vimbuffer<CR>
+" paste from buffer
+map <C-p> :r ~/.vimbuffer<CR>
+set mouse=a
 execute pathogen#infect()
 filetype indent plugin on
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
@@ -34,6 +40,6 @@ if has('statusline')
   set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
 endif
 let g:flake8_show_in_gutter=1
-map <C-P> :call yapf#YAPF()<cr>
-imap <C-P> <c-o>:call yapf#YAPF()<cr>
+map <C-O> :call yapf#YAPF()<cr>
+imap <C-O> <c-o>:call yapf#YAPF()<cr>
 autocmd BufWritePre * :%s/\s\+$//e
