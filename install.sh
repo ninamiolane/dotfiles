@@ -1,5 +1,5 @@
 #!/bin/bash
-
+apt-get install most
 set -e
 set -x
 

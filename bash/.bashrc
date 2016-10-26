@@ -20,6 +20,9 @@ if [[ $platform == 'Linux' ]]; then
     alias ll='ls -l --color=auto'
 fi
 
+if [[ -e /usr/bin/most ]]; then
+    export PAGER='/usr/bin/most'
+fi
 export CLICOLOR=1
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/caffe/lib/
 export EDITOR=/usr/bin/vim
